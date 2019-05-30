@@ -1,9 +1,0 @@
-wlp2s0    IEEE 802.11  ESSID:"G10"  
-          Mode:Managed  Frequency:5.805 GHz  Access Point: A6:9F:EC:9B:53:03   
-          Bit Rate=6 Mb/s   Tx-Power=30 dBm   
-          Retry short limit:7   RTS thr:off   Fragment thr:off
-          Power Management:on
-          Link Quality=56/70  Signal level=-54 dBm  
-          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
-          Tx excessive retries:0  Invalid misc:293   Missed beacon:0
-
