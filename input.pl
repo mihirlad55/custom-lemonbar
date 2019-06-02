@@ -179,7 +179,8 @@ while (1) {
         $colorIP = $COLOR_STRENGTH[3];
     }
 
-    my $volume = `amixer get 'Master' | awk '/\\[(on)|(off)\\]/{print \$3; exit}' | tr -d '[]%\n'`;
+    my $volume = `pamixer --get-volume`;
+    chomp $volume;
 
     if ( $volume > 25 ) {
         $volume = "$SYM_VOLUME_UP  $volume%";

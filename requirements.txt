@@ -2,4 +2,4 @@ lemonbar
 fontawesome
 amixer
 nerd-fonts-complete
-
+pamixer
