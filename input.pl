@@ -192,11 +192,11 @@ while (1) {
 
     my $activeWindowTitle = `xprop -id \$(xprop -root 32x '\t\$0' _NET_ACTIVE_WINDOW | cut -f 2) _NET_WM_NAME | sed 's/^_NET_WM_NAME(UTF8_STRING) = //g' | tr -d '""\n'`;
 
-    my $brightnessText;
+    my $brightnessText = "";
     if ($HAS_BACKLIGHT) {
         my $brightness = int `cat /sys/class/backlight/intel_backlight/brightness` / `cat /sys/class/backlight/intel_backlight/max_brightness` * 100;
 
-        my $brightnessText;
+        my $brightnessText = "";
         if ($brightness == 100) {
             $brightnessText = $SYM_BRIGHTNESS[2];
         } elsif ($brightness >= 50) {
